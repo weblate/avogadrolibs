@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: avogadro\n"
 "Report-Msgid-Bugs-To: avogadro-devel@lists.sourceforge.net\n"
 "POT-Creation-Date: 2026-09-25 15:21+0000\n"
-"PO-Revision-Date: 2026-09-07 01:55+0000\n"
+"PO-Revision-Date: 2026-09-26 19:52+0000\n"
 "Last-Translator: Eisuke Kawashima <e.kawaschima+weblate@gmail.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/avogadro/"
 "avogadrolibs/ja/>\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2026.9.1.dev0\n"
+"X-Generator: Weblate 2026.10.dev0\n"
 "X-Launchpad-Export-Date: 2018-04-13 16:02+0000\n"
 
 #: molequeue/batchjob.cpp:66
@@ -519,28 +519,29 @@ msgid "No file name set in BackgroundFileFormat!"
 msgstr ""
 
 #: qtgui/conformerquantitytranslator.cpp:30
-#, qt-format
+#, fuzzy, qt-format
 msgid "Distance %1-%2"
-msgstr ""
+msgstr "距離 %1-%2"
 
 #: qtgui/conformerquantitytranslator.cpp:32
-#, qt-format
+#, fuzzy, qt-format
 msgid "Angle %1-%2-%3"
-msgstr ""
+msgstr "角度 %1-%2-%3"
 
 #: qtgui/conformerquantitytranslator.cpp:35
-#, qt-format
+#, fuzzy, qt-format
 msgid "Dihedral %1-%2-%3-%4"
-msgstr ""
+msgstr "二面角 %1-%2-%3-%4"
 
 #: qtgui/conformerquantitytranslator.cpp:39
+#, fuzzy
 msgid "Constraint"
-msgstr ""
+msgstr "拘束"
 
 #: qtgui/conformerquantitytranslator.cpp:45
 msgctxt "position in a trajectory, counting from one"
 msgid "Frame"
-msgstr ""
+msgstr "フレーム"
 
 #. i18n: file: qtplugins/openmminput/openmminputdialog.ui:858
 #. i18n: ectx: property (text), widget (QCheckBox, timeCheck)
@@ -551,11 +552,11 @@ msgstr "時間"
 #: qtgui/conformerquantitytranslator.cpp:49
 msgctxt "root mean square displacement"
 msgid "RMSD"
-msgstr ""
+msgstr "RMSD"
 
 #: qtgui/conformerquantitytranslator.cpp:51
 msgid "Relative Energy"
-msgstr ""
+msgstr "相対エネルギー"
 
 #: qtgui/conformerquantitytranslator.cpp:53
 msgid "RMS Gradient"
@@ -564,7 +565,7 @@ msgstr "RMS勾配"
 #: qtgui/conformerquantitytranslator.cpp:55
 msgctxt "average over the atoms of how fast each moves"
 msgid "Mean Speed"
-msgstr ""
+msgstr "平均速度"
 
 #. i18n: file: qtplugins/lammpsinput/lammpsinputdialog.ui:327
 #. i18n: ectx: property (text), widget (QLabel, label_temp)
@@ -580,7 +581,7 @@ msgstr "温度"
 #, qt-format
 msgctxt "quantity name, then its unit"
 msgid "%1 (%2)"
-msgstr ""
+msgstr "%1 (%2)"
 
 #: qtgui/containerwidget.cpp:27
 msgid "Split Horizontal"
@@ -1072,7 +1073,7 @@ msgstr "オガネソン"
 
 #: qtgui/energyunitsdialog.cpp:55
 msgid "Convert Energy Units"
-msgstr ""
+msgstr "エネルギーの単位を変換"
 
 #: qtgui/energyunitsdialog.cpp:70 qtplugins/plotconformer/plotconformer.cpp:924
 msgid "This file records the units its energies are in."
@@ -1159,7 +1160,7 @@ msgstr "全てのファイル"
 
 #: qtgui/fileformatdialog.cpp:299
 msgid "Compressed files"
-msgstr ""
+msgstr "圧縮されたファイル"
 
 #: qtgui/fileformatdialog.cpp:306
 msgid "All supported formats"
@@ -1167,15 +1168,16 @@ msgstr "サポートされているすべてのフォーマット"
 
 #: qtgui/fragmenttools.cpp:309
 msgid "Adjust Distance"
-msgstr ""
+msgstr "距離を調整"
 
 #: qtgui/fragmenttools.cpp:361
 msgid "Adjust Angle"
-msgstr ""
+msgstr "角度を調整"
 
 #: qtgui/fragmenttools.cpp:424
+#, fuzzy
 msgid "Adjust Torsion"
-msgstr ""
+msgstr "二面角を調整"
 
 #: qtgui/interfacescript.cpp:306
 #, qt-format
@@ -1274,8 +1276,9 @@ msgid "Multiplicity"
 msgstr "多重度"
 
 #: qtgui/jsonwidget.cpp:344
+#, fuzzy
 msgid "Coordinates"
-msgstr ""
+msgstr "座標"
 
 #: qtgui/jsonwidget.cpp:350
 msgid "Solvent"
@@ -4260,7 +4263,7 @@ msgstr ""
 #: qtplugins/measuretool/measuretool.cpp:616
 #: qtplugins/measuretool/measuretool.cpp:1008
 msgid "These atoms are in a straight line, so this angle isn't defined."
-msgstr ""
+msgstr "原子が直線上にあるため角度は定義されません。"
 
 #: qtplugins/measuretool/measuretool.cpp:641
 #, qt-format
@@ -4329,7 +4332,7 @@ msgstr ""
 
 #: qtplugins/measuretool/measuretool.cpp:764
 msgid "There is no molecule to measure."
-msgstr ""
+msgstr "測定する分子がありません。"
 
 #: qtplugins/measuretool/measuretool.cpp:791
 msgid "value must be a distance greater than 0 Å."
@@ -4377,16 +4380,19 @@ msgid "value is required and must be an angle in degrees."
 msgstr ""
 
 #: qtplugins/measuretool/measuretool.cpp:996
+#, fuzzy
 msgid "That's not a value this distance can be set to."
-msgstr ""
+msgstr "距離として設定できる値ではありません。"
 
 #: qtplugins/measuretool/measuretool.cpp:998
+#, fuzzy
 msgid "That's not a value this angle can be set to."
-msgstr ""
+msgstr "角度として設定できる値ではありません。"
 
 #: qtplugins/measuretool/measuretool.cpp:1000
+#, fuzzy
 msgid "That's not a value this dihedral can be set to."
-msgstr ""
+msgstr "二面角として設定できる値ではありません。"
 
 #: qtplugins/measuretool/measuretool.cpp:1021
 #, qt-format
@@ -4435,8 +4441,9 @@ msgid ""
 msgstr ""
 
 #: qtplugins/measuretool/measurewidget.cpp:34
+#, fuzzy
 msgid "Distance 1–2"
-msgstr ""
+msgstr "距離 1–2"
 
 #: qtplugins/measuretool/measurewidget.cpp:34
 #: qtplugins/measuretool/measurewidget.cpp:36
@@ -4445,16 +4452,19 @@ msgid " Å"
 msgstr " Å"
 
 #: qtplugins/measuretool/measurewidget.cpp:36
+#, fuzzy
 msgid "Distance 2–3"
-msgstr ""
+msgstr "距離 2–3"
 
 #: qtplugins/measuretool/measurewidget.cpp:38
+#, fuzzy
 msgid "Distance 3–4"
-msgstr ""
+msgstr "距離 3–4"
 
 #: qtplugins/measuretool/measurewidget.cpp:40
+#, fuzzy
 msgid "Angle 1–2–3"
-msgstr ""
+msgstr "角度 1–2–3"
 
 #: qtplugins/measuretool/measurewidget.cpp:40
 #: qtplugins/measuretool/measurewidget.cpp:42
@@ -4463,12 +4473,14 @@ msgid "°"
 msgstr "°"
 
 #: qtplugins/measuretool/measurewidget.cpp:42
+#, fuzzy
 msgid "Angle 2–3–4"
-msgstr ""
+msgstr "角度 2–3–4"
 
 #: qtplugins/measuretool/measurewidget.cpp:44
+#, fuzzy
 msgid "Dihedral 1–2–3–4"
-msgstr ""
+msgstr "二面角 1–2–3–4"
 
 #: qtplugins/measuretool/measurewidget.cpp:145
 #, qt-format
@@ -5069,11 +5081,11 @@ msgstr "エラー: サーバからの応答が空"
 #: qtplugins/packageinstaller/packagemanagerdialog.cpp:302
 #, qt-format
 msgid "Authors: %1"
-msgstr ""
+msgstr "作者: %1"
 
 #: qtplugins/packageinstaller/packagemanagerdialog.cpp:302
 msgid ", "
-msgstr ""
+msgstr ", "
 
 #: qtplugins/packageinstaller/packagemanagerdialog.cpp:309
 #, qt-format, qt-plural-format
@@ -5296,7 +5308,7 @@ msgstr "説明"
 
 #: qtplugins/packageinstaller/packagemodel.cpp:183
 msgid "Keywords"
-msgstr ""
+msgstr "キーワード"
 
 #: qtplugins/packageinstaller/packagemodel.cpp:610
 msgid "Electrostatics"
@@ -5467,11 +5479,12 @@ msgstr "配座異性体解析"
 
 #: qtplugins/plotconformer/plotconformer.cpp:571
 msgid "Plot:"
-msgstr ""
+msgstr "プロット:"
 
 #: qtplugins/plotconformer/plotconformer.cpp:573
+#, fuzzy
 msgid "vs"
-msgstr ""
+msgstr "vs"
 
 #: qtplugins/plotconformer/plotconformer.cpp:584
 msgid "Add from Selection"
@@ -5486,12 +5499,13 @@ msgid "Energy Units:"
 msgstr "エネルギーの単位:"
 
 #: qtplugins/plotconformer/plotconformer.cpp:616
+#, fuzzy
 msgid "Time between frames:"
-msgstr ""
+msgstr "フレーム間の時間:"
 
 #: qtplugins/plotconformer/plotconformer.cpp:622
 msgid " ps"
-msgstr ""
+msgstr " ps"
 
 #: qtplugins/plotconformer/plotconformer.cpp:624
 msgid ""
@@ -5872,7 +5886,7 @@ msgstr "プロパティの追加…"
 
 #: qtplugins/propertytables/propertyview.cpp:974
 msgid "Convert Energy Units…"
-msgstr ""
+msgstr "エネルギーの単位を変換…"
 
 #: qtplugins/propertytables/propertyview.cpp:981
 #, fuzzy
@@ -6102,11 +6116,11 @@ msgstr "残基を選択"
 
 #: qtplugins/select/select.cpp:587
 msgid "Select all atoms."
-msgstr ""
+msgstr "原子を全て選択"
 
 #: qtplugins/select/select.cpp:589
 msgid "Deselect all atoms"
-msgstr ""
+msgstr "原子の選択を全て解除"
 
 #: qtplugins/select/select.cpp:592
 msgid ""
@@ -6115,20 +6129,21 @@ msgid ""
 msgstr ""
 
 #: qtplugins/select/select.cpp:596
+#, fuzzy
 msgid "Select all atoms of a certain element type."
-msgstr ""
+msgstr "特定の元素タイプの原子を全て選択"
 
 #: qtplugins/select/select.cpp:600
 msgid "Select all atoms that belong to amino acid backbones"
-msgstr ""
+msgstr "アミノ酸主鎖に属する原子を全て選択"
 
 #: qtplugins/select/select.cpp:604
 msgid "Select all atoms that belong to amino acid sidechains"
-msgstr ""
+msgstr "アミノ酸側鎖に属する原子を全て選択"
 
 #: qtplugins/select/select.cpp:606
 msgid "Select all water molecules"
-msgstr ""
+msgstr "水分子を全て選択"
 
 #: qtplugins/select/select.cpp:610
 msgid ""
@@ -6143,7 +6158,7 @@ msgstr ""
 
 #: qtplugins/select/select.cpp:619
 msgid "Separate the selected atoms into a new layer."
-msgstr ""
+msgstr "選択した原子を新しいレイヤーに分離"
 
 #. i18n: file: qtplugins/symmetry/symmetrywidget.ui:186
 #. i18n: ectx: property (text), widget (QPushButton, selectSubgroupButton)
@@ -6855,7 +6870,7 @@ msgstr "対称性…"
 
 #: qtplugins/symmetry/symmetry.cpp:216
 msgid "There is no molecule to analyze."
-msgstr ""
+msgstr "解析する分子がありません。"
 
 #: qtplugins/symmetry/symmetry.cpp:223 qtplugins/symmetry/symmetry.cpp:391
 msgid "The molecule has no 3D coordinates."
@@ -6863,15 +6878,16 @@ msgstr ""
 
 #: qtplugins/symmetry/symmetry.cpp:228
 msgid "The molecule has no atoms."
-msgstr ""
+msgstr "分子に原子がありません。"
 
 #: qtplugins/symmetry/symmetry.cpp:386
 msgid "There is no molecule to symmetrize."
-msgstr ""
+msgstr "対称化する分子がありません。"
 
 #: qtplugins/symmetry/symmetry.cpp:394
+#, fuzzy
 msgid "A single atom is already symmetric."
-msgstr ""
+msgstr "単一の原子は既に対称化されています。"
 
 #: qtplugins/symmetry/symmetry.cpp:415
 #, qt-format
@@ -6880,16 +6896,16 @@ msgstr ""
 
 #: qtplugins/symmetry/symmetry.cpp:438
 msgid "Detect the point group of the molecule."
-msgstr ""
+msgstr "分子の点群を検出"
 
 #: qtplugins/symmetry/symmetry.cpp:440
 msgid "Snap the molecule onto its detected point group."
 msgstr ""
 
 #: qtplugins/symmetry/symmetry.cpp:457
-#, qt-format
+#, fuzzy, qt-format
 msgid "Unknown tolerance \"%1\": expected tight, normal, loose or veryloose."
-msgstr ""
+msgstr "不明な許容度 \"%1\": tight, normal, loose or veryloose."
 
 #: qtplugins/symmetry/symmetry.cpp:479
 #, qt-format
@@ -6897,9 +6913,9 @@ msgid "Detected %1"
 msgstr ""
 
 #: qtplugins/symmetry/symmetry.cpp:490
-#, qt-format
+#, fuzzy, qt-format
 msgid "Symmetrized to %1"
-msgstr ""
+msgstr "%1に対称化"
 
 #: qtplugins/symmetry/symmetry.h:97
 msgid "Provide symmetry functionality."
@@ -7143,16 +7159,17 @@ msgstr "yaehmopで拡張ヒュッケル計算を行う"
 #: qtplugins/zmatrixeditor/zmatrixeditor.cpp:36
 #: qtplugins/zmatrixeditor/zmatrixeditor.h:34
 msgid "Z-Matrix Editor"
-msgstr ""
+msgstr "Zマトリックスエディタ"
 
 #: qtplugins/zmatrixeditor/zmatrixeditor.cpp:59
 #: qtplugins/zmatrixeditor/zmatrixmodel.cpp:703
 msgid "Add Dummy Atoms"
-msgstr ""
+msgstr "ダミー原子を追加"
 
 #: qtplugins/zmatrixeditor/zmatrixeditor.cpp:67
+#, fuzzy
 msgid "Rebuild Geometry"
-msgstr ""
+msgstr "構造を再構築"
 
 #: qtplugins/zmatrixeditor/zmatrixeditor.cpp:69
 msgid ""
@@ -7162,7 +7179,7 @@ msgstr ""
 
 #: qtplugins/zmatrixeditor/zmatrixeditor.cpp:80
 msgid "&Z-Matrix Editor…"
-msgstr ""
+msgstr "&Zマトリックスエディタ…"
 
 #: qtplugins/zmatrixeditor/zmatrixeditor.cpp:135
 msgid "Atoms renumbered into z-matrix order."
@@ -7221,26 +7238,27 @@ msgid ""
 msgstr ""
 
 #: qtplugins/zmatrixeditor/zmatrixeditor.h:37
+#, fuzzy
 msgid "Edit bond lengths, angles and torsions in a table."
-msgstr ""
+msgstr "テーブル上で結合長、角度、二面角を編集"
 
 #: qtplugins/zmatrixeditor/zmatrixmodel.cpp:127
 msgid "Distance (Å)"
-msgstr ""
+msgstr "距離 (Å)"
 
 #: qtplugins/zmatrixeditor/zmatrixmodel.cpp:131
 msgid "Dihedral (°)"
-msgstr ""
+msgstr "二面角 (°)"
 
 #: qtplugins/zmatrixeditor/zmatrixmodel.cpp:174
 #, qt-format
 msgid "Constrained to %1 Å"
-msgstr ""
+msgstr "%1 Å に拘束"
 
 #: qtplugins/zmatrixeditor/zmatrixmodel.cpp:176
 #, qt-format
 msgid "Constrained to %1°"
-msgstr ""
+msgstr "%1° に拘束"
 
 #: qtplugins/zmatrixeditor/zmatrixmodel.cpp:364
 #, qt-format
@@ -7264,16 +7282,17 @@ msgid ""
 msgstr ""
 
 #: qtplugins/zmatrixeditor/zmatrixmodel.cpp:735
+#, fuzzy
 msgid "Rebuild from Z-matrix"
-msgstr ""
+msgstr "Zマトリックスから再構築"
 
 #: qtplugins/zmatrixeditor/zmatrixview.cpp:117
 msgid "Constrain Distance"
-msgstr ""
+msgstr "距離を拘束"
 
 #: qtplugins/zmatrixeditor/zmatrixview.cpp:123
 msgid "Constrain Dihedral"
-msgstr ""
+msgstr "二面角を拘束"
 
 #. i18n: file: molequeue/inputgeneratordialog.ui:14
 #. i18n: ectx: property (windowTitle), widget (QDialog, Avogadro::MoleQueue::InputGeneratorDialog)
@@ -8043,12 +8062,12 @@ msgstr "結合次数:"
 #. i18n: file: qtplugins/editor/editortoolwidget.ui:53
 #. i18n: ectx: property (toolTip), widget (QCheckBox, adjustBondLengths)
 msgid "When possible, adjust bond lengths when changing atoms or bond orders"
-msgstr ""
+msgstr "可能であれば、原子や結合次数を変えたときに結合距離を調整する"
 
 #. i18n: file: qtplugins/editor/editortoolwidget.ui:56
 #. i18n: ectx: property (text), widget (QCheckBox, adjustBondLengths)
 msgid "Adjust Bond Lengths"
-msgstr ""
+msgstr "結合距離を調整"
 
 #. i18n: file: qtplugins/forcefield/forcefielddialog.ui:20
 #. i18n: ectx: property (windowTitle), widget (QDialog, Avogadro::QtPlugins::ForceFieldDialog)
@@ -9796,12 +9815,12 @@ msgstr "プラグインを検索…"
 #. i18n: file: qtplugins/packageinstaller/packagemanagerdialog.ui:81
 #. i18n: ectx: property (title), widget (QGroupBox, infoBox)
 msgid "Plugin Information"
-msgstr ""
+msgstr "プラグイン情報"
 
 #. i18n: file: qtplugins/packageinstaller/packagemanagerdialog.ui:122
 #. i18n: ectx: property (text), widget (QPushButton, bugTrackerButton)
 msgid "Report an Issue"
-msgstr ""
+msgstr "問題を報告"
 
 #. i18n: file: qtplugins/packageinstaller/packagemanagerdialog.ui:125
 #. i18n: ectx: property (toolTip), widget (QPushButton, bugTrackerButton)
