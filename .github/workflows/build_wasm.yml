@@ -39,15 +39,15 @@ env:
   SUPERBUILD_REVISION: ${{ inputs.superbuild_revision || vars.WASM_SUPERBUILD_REVISION }}
   # ExternalProject's nested builds must use the same limit as the superbuild.
   CMAKE_BUILD_PARALLEL_LEVEL: '2'
-  EIGEN_VERSION: '3.4.0'
-  EIGEN_SHA256: '8586084f71f9bde545ee7fa6d00288b264a2b7ac3607b974e54d13e7162c1c72'
+  EIGEN_VERSION: '5.0.1'
+  EIGEN_SHA256: 'e9c326dc8c05cd1e044c71f30f1b2e34a6161a3b6ecf445d56b53ff1669e3dec'
 
 jobs:
   # Headless core/io/calc for downstream WebAssembly apps. Needs neither Qt
   # nor the superbuild, so it runs on every change.
   headless:
     name: WebAssembly headless (core, io, calc)
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
     timeout-minutes: 30
     defaults:
       run:
@@ -87,7 +87,8 @@ jobs:
           echo "EM_CACHE=$RUNNER_TEMP/em-cache" >> "$GITHUB_ENV"
 
       # The Emscripten toolchain only searches its own sysroot, so give it a
-      # private copy of the (header-only) Eigen.
+      # private copy of the (header-only) Eigen. As a top-level project,
+      # Eigen 5 also builds BLAS, LAPACK and demos unless told not to.
       - name: Install Eigen
         run: |
           curl -fsSL --retry 3 -o eigen.tar.gz \
@@ -95,7 +96,9 @@ jobs:
           echo "${EIGEN_SHA256}  eigen.tar.gz" | sha256sum -c -
           tar -xzf eigen.tar.gz
           cmake -S "eigen-${EIGEN_VERSION}" -B eigen-build \
-            -DCMAKE_INSTALL_PREFIX="$RUNNER_TEMP/eigen" -DBUILD_TESTING=OFF \
+            -DCMAKE_INSTALL_PREFIX="$RUNNER_TEMP/eigen" \
+            -DEIGEN_BUILD_TESTING=OFF -DEIGEN_BUILD_BLAS=OFF \
+            -DEIGEN_BUILD_LAPACK=OFF -DEIGEN_BUILD_DEMOS=OFF \
             -DEIGEN_BUILD_DOC=OFF -DEIGEN_BUILD_PKGCONFIG=OFF
           cmake --install eigen-build
 
